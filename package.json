@@ -3,7 +3,7 @@
   "displayName": "Meson",
   "description": "Meson language support for Visual Studio Code",
   "icon": "graphics/icon.png",
-  "version": "1.22.0",
+  "version": "100.22.0",
   "license": "Apache-2.0",
   "publisher": "mesonbuild",
   "author": {
@@ -509,6 +509,7 @@
     "postinstall": "husky install",
     "prettier:check": "prettier --check **.md **.ts **.yml **.json",
     "vscode:prepublish": "npm run compile",
+    "package": "vsce package",
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
@@ -516,6 +517,7 @@
     "@types/node": "^16.11.7",
     "@types/vscode": "^1.75.0",
     "@types/which": "^3.0.0",
+    "@vscode/vsce": "^2.19.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "markdownlint-cli2": "^0.10.0",

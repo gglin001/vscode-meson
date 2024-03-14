@@ -61,6 +61,7 @@ export class SwiftMesonLspLanguageClient extends LanguageServerClient {
   }
 
   static override supportsSystem(): boolean {
+    return true;
     const arch = os.arch();
     if (arch != "x64" && arch != "arm64") return false;
 
