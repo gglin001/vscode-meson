@@ -114,11 +114,11 @@ export class TargetNode extends BaseNode {
 
     const targetName = await getTargetName(this.target);
 
-    item.command = {
-      title: `Build ${this.target.name}`,
-      command: "mesonbuild.build",
-      arguments: [targetName],
-    };
+    // item.command = {
+    //   title: `Build ${this.target.name}`,
+    //   command: "mesonbuild.build",
+    //   arguments: [targetName],
+    // };
 
     return item;
   }
